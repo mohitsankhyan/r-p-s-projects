@@ -76,7 +76,7 @@ int main()
     else
         computer = 'z';
  
-    printf("\n\n\n\n\t\t\t\tEnter "S" for STONE, "P" for PAPER and "S" for SCISSOR\n\t\t\t\t\t\t\t");
+    printf("\n\n\n\n\t\t\t\tEnter "R" for ROCK, "P" for PAPER and "S" for SCISSOR\n\t\t\t\t\t\t\t");
  
     // input from the user
     scanf("%c", &you);
