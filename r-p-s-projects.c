@@ -32,46 +32,31 @@ int game(char you, char computer)
     else if (you == 'z' && computer == 'p')
         return 1;
 }
- 
-// Driver Code
 int main()
 {
-    // Stores the random number
+    
     int n;
  
     char you, computer, result;
  
-    // Chooses the random number
-    // every time
     srand(time(NULL));
  
-    // Make the random number less
-    // than 100, divided it by 100
     n = rand() % 100;
  
-    // Using simple probability 100 is
-    // roughly divided among stone,
-    // paper, and scissor
     if (n < 33)
  
-        // s is denoting Stone
         computer = 's';
  
     else if (n > 33 && n < 66)
  
-        // p is denoting Paper
         computer = 'p';
- 
-    // z is denoting Scissor
     else
         computer = 'z';
  
     printf("\n\n\n\n\t\t\t\tEnter "R" for ROCK, "P" for PAPER and "S" for SCISSOR\n\t\t\t\t\t\t\t");
  
-    // input from the user
     scanf("%c", &you);
  
-    // Function Call to play the game
     result = game(you, computer);
  
     if (result == -1) {
