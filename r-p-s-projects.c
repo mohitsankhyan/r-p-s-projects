@@ -1,5 +1,3 @@
-
-// C program for the above approach
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
